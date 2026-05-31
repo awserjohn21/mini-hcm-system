@@ -1,3 +1,4 @@
+require("dotenv").config();
 var admin = require("firebase-admin");
 
 // Check if all necessary environment variables are set
