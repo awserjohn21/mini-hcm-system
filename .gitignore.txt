@@ -1,2 +1,0 @@
-server/serviceAccountKey.json
-server/node_modules
