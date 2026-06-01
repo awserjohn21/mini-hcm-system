@@ -18,8 +18,8 @@ app.use("/api", userRoutes);
 app.use("/api", attendanceRoutes);
 app.use("/api", dailySummaryRoutes);
 
-app.get("/api", (req, res) => {
-  res.json({ message: "Running" });
+app.get("/", (req, res) => {
+  res.json({ message: "HCM Backend is running" });
 });
 
 module.exports = app;
