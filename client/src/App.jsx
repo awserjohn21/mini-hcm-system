@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import "./App.css";
-import api from "./lib/axios";
 import { Routes, Route } from "react-router-dom";
 // import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/auth/pages/RegisterPage";
@@ -13,14 +11,6 @@ import AttendanceAdminPage from "./pages/admin/pages/AttendancePage";
 import DailySummaryAdminPage from "./pages/admin/pages/DailySummaryPage";
 import UserAdminPage from "./pages/admin/pages/UsePage";
 function App() {
-  const fetchApi = async () => {
-    const response = await api.get("/");
-    console.log(response.data.message);
-  };
-
-  useEffect(() => {
-    fetchApi();
-  }, []);
   return (
     <Routes>
       {/* PUBLIC ROUTES  */}
