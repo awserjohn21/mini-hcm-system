@@ -107,7 +107,7 @@ export default function DailySummaryPage() {
 
             <CardContent className="p-3 pt-0">
               <p className="text-2xl font-bold leading-none">
-                {formatMinutes(userStats?.totalRegularHours || 0)}
+                {formatMinutes(userStats?.totalRegular || 0)}
               </p>
             </CardContent>
           </Card>
@@ -117,7 +117,7 @@ export default function DailySummaryPage() {
             <CardContent className="p-3">
               <p className="text-xs text-teal-600">Night Differential</p>
               <p className="text-xl font-bold">
-                {formatMinutes(userStats?.totalNightDiffHours || 0)}
+                {formatMinutes(userStats?.totalND || 0)}
               </p>
             </CardContent>
           </Card>
@@ -126,7 +126,7 @@ export default function DailySummaryPage() {
             <CardContent className="p-3">
               <p className="text-xs text-teal-600">Overtime</p>
               <p className="text-xl font-bold">
-                {formatMinutes(userStats?.totalOvertimeHours || 0)}
+                {formatMinutes(userStats?.totalOT || 0)}
               </p>
             </CardContent>
           </Card>
@@ -135,7 +135,7 @@ export default function DailySummaryPage() {
             <CardContent className="p-3">
               <p className="text-xs text-teal-600">Late</p>
               <p className="text-xl font-bold">
-                {formatMinutes(userStats?.totalLateMinutes || 0)}
+                {formatMinutes(userStats?.totalLate || 0)}
               </p>
             </CardContent>
           </Card>
@@ -144,7 +144,7 @@ export default function DailySummaryPage() {
             <CardContent className="p-3">
               <p className="text-xs text-teal-600">Undertime</p>
               <p className="text-xl font-bold">
-                {formatMinutes(userStats?.totalUndertimeMinutes || 0)}
+                {formatMinutes(userStats?.totalUT || 0)}
               </p>
             </CardContent>
           </Card>
