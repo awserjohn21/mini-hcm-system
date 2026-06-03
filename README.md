@@ -9,10 +9,13 @@ This project demonstrates employee attendance tracking and automated computation
 
 The system allows employees to punch in and out while automatically calculating time-based metrics. It supports role-based access (User/Admin) and generates daily and weekly summaries for workforce monitoring.
 
-
-
 Built using free-tier tools:
 - Frontend: React.js + shadcn/ui
 - Backend: Node.js + Express
 - Database & Auth: Firebase (Firestore + Firebase Authentication)
 - Hosting: Firebase Hosting / Vercel
+
+
+### Administrator
+Email: admin@gmail.com
+Password: awserzxc21
